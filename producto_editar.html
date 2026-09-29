@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto - InventarioPro</title>
+     <link rel="stylesheet" href="../plantilla/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-4" style="max-width:820px">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard.html">Panel de Control</a></li>
+                <li class="breadcrumb-item"><a href="#">Productos</a></li>
+                <li class="breadcrumb-item active">Editar Producto</li>
+            </ol>
+        </nav>
+        <h1 class="h3 mb-3">Modificar Producto <span class="badge rounded-pill text-bg-warning">SKU: PROD-001</span></h1>
+        <form class="needs-validation card card-body" novalidate>
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre del Producto</label>
+                    <input type="text" id="nombre" class="form-control" value="Teclado Mecánico RGB" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="sku" class="form-label">Código SKU</label>
+                    <input type="text" id="sku" class="form-control" value="PROD-001" disabled>
+                </div>
+                <div class="col-md-6">
+                    <label for="categoria" class="form-label">Categoría</label>
+                    <select id="categoria" class="form-select">
+                        <option selected>Periféricos</option>
+                        <option>Monitores</option>
+                        <option>Accesorios</option>
+                    </select>
+                </div>
+            </div>
+            <label class="form-label d-block">Disponibilidad</label>
+            <div class="btn-group mb-3" role="group">
+                <input type="radio" class="btn-check" name="disp" id="d1" checked>
+                <label class="btn btn-outline-primary" for="d1">En Stock</label>
+                <input type="radio" class="btn-check" name="disp" id="d2">
+                <label class="btn btn-outline-primary" for="d2">Agotado</label>
+            </div>
+            <div>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#confirmar">Actualizar Cambios</button>
+                <a href="dashboard.html" class="btn btn-outline-primary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal fade" id="confirmar" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Confirmar cambios</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">¿Desea guardar los cambios realizados al producto PROD-001?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Revisar</button>
+                <button type="button" class="btn btn-warning">Sí, actualizar</button>
+            </div>
+        </div></div>
+    </div>
+     <script src="../plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

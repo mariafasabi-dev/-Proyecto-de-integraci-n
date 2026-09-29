@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Producto - InventarioPro</title>
+     <link rel="stylesheet" href="../plantilla/css/bootstrap.min.css">
+<body class="bg-light">
+    <div class="container py-4" style="max-width:720px">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard.html">Panel de Control</a></li>
+                <li class="breadcrumb-item"><a href="#">Productos</a></li>
+                <li class="breadcrumb-item active">Eliminar Producto</li>
+            </ol>
+        </nav>
+        <div class="alert alert-danger">
+            <h1 class="alert-heading h5">¡Atención! Confirmación requerida</h1>
+            <p class="mb-0">Esta acción no se puede deshacer. Se eliminará el registro permanentemente de la base de datos.</p>
+        </div>
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h2 class="h6">Detalles del Registro:</h2>
+                <p class="mb-1"><strong>SKU:</strong> PROD-001</p>
+                <p class="mb-1"><strong>Producto:</strong> Teclado Mecánico RGB</p>
+                <p class="mb-1"><strong>Categoría:</strong> Periféricos</p>
+                <p class="mb-0"><strong>Estado Actual:</strong> <span class="badge text-bg-success">En Stock</span></p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-danger">Confirmar y Eliminar</button>
+        <a href="dashboard.html" class="btn btn-secondary">Cancelar y Volver</a>
+    </div>
+     <script src="../plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

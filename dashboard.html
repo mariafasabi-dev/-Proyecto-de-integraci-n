@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - InventarioPro</title>
+     <link rel="stylesheet" href="../plantilla/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item active">Panel de Control</li>
+            </ol>
+        </nav>
+        <div class="alert alert-info alert-dismissible fade show">
+            Bienvenido al panel general del sistema.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="h3 mb-0">Panel Operativo</h1>
+            <button type="button" class="btn btn-primary">Mensajes <span class="badge text-bg-danger">4</span></button>
+        </div>
+        <div class="row g-3">
+            <div class="col-12 col-md-3">
+                <div class="list-group">
+                    <a href="dashboard.html" class="list-group-item list-group-item-action active text-center">Inicio</a>
+                    <a href="producto_crear.html" class="list-group-item list-group-item-action text-center">Productos</a>
+                    <a href="#" class="list-group-item list-group-item-action text-center">Usuarios</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card h-100"><div class="card-body">
+                            <h2 class="h6 card-title">Stock Disponible</h2>
+                            <span class="badge text-bg-success">120 Unidades · En Stock</span>
+                        </div></div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100"><div class="card-body">
+                            <h2 class="h6 card-title">Avisos Pendientes</h2>
+                            <span class="badge text-bg-warning">2 Críticos</span>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <script src="../plantilla/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Producto - InventarioPro</title>
+     <link rel="stylesheet" href="../plantilla/css/bootstrap.min.css">
+<body class="bg-light">
+    <div class="container py-4" style="max-width:820px">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard.html">Panel de Control</a></li>
+                <li class="breadcrumb-item active">Registro de Producto</li>
+            </ol>
+        </nav>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="h3 mb-0">Nuevo Producto <span class="badge text-bg-secondary">Inventario</span></h1>
+            <a href="dashboard.html" class="btn btn-outline-secondary btn-sm">Volver al Panel</a>
+        </div>
+        <form class="needs-validation card card-body" novalidate>
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre del Producto</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ej. Teclado Mecánico RGB" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="sku" class="form-label">Código SKU</label>
+                    <input type="text" id="sku" class="form-control" placeholder="PROD-001" pattern="[A-Za-z]+-[0-9]+" required>
+                </div>
+            </div>
+            <label for="categorias" class="form-label">Categorías Asignadas</label>
+            <select id="categorias" class="form-select mb-3" multiple size="4" required>
+                <option>Soporte Técnico</option>
+                <option>Facturación</option>
+                <option>Ventas</option>
+                <option>Reclamos</option>
+            </select>
+            <label class="form-label d-block">Disponibilidad Inicial</label>
+            <div class="btn-group mb-3" role="group">
+                <input type="radio" class="btn-check" name="disp" id="d1" checked>
+                <label class="btn btn-outline-primary" for="d1">En Stock</label>
+                <input type="radio" class="btn-check" name="disp" id="d2">
+                <label class="btn btn-outline-primary" for="d2">Agotado</label>
+                <input type="radio" class="btn-check" name="disp" id="d3">
+                <label class="btn btn-outline-primary" for="d3">Descontinuado</label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="publicar" checked>
+                <label class="form-check-label" for="publicar">Publicar inmediatamente en el catálogo general</label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                <a href="dashboard.html" class="btn btn-outline-danger">Cancelar</a>
+            </div>
+        </form>
+    </div>
+     <script src="../plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
